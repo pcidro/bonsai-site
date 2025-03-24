@@ -34,7 +34,7 @@ img {
 }
 
 .header-bg {
-  background: #fff;
+  background: #fafafa;
 }
 
 .img-header {
@@ -59,7 +59,7 @@ img {
 .menu-header li:nth-child(1)::after {
   content: "▼";
   font-size: 12px;
-  color: #222;
+  color: #4a4a4a;
   margin-left: 5px;
 }
 
@@ -220,6 +220,7 @@ img {
   width: 10px;
   height: 7px;
   display: inline-block;
+  flex-shrink: 0;
 }
 
 .plan-item a {
@@ -339,4 +340,152 @@ img {
   transform-origin: center;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+.add-ons {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 60px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.add-ons h2 {
+  max-width: 960px;
+  color: #4a4a4a;
+  font-size: 2rem;
+  padding-bottom: 60px;
+  text-align: center;
+  position: relative;
+  top: 30px;
+  right: 120px;
+}
+
+.add-on-item {
+  background: white;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.add-on-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-on-value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.add-on-item h3 {
+  color: #4a4a4a;
+  font-size: 16px;
+}
+
+.add-on-item p {
+  color: #4a4a4a;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.add-on-price {
+  font-size: 2.5rem;
+  color: #4a4a4a;
+}
+
+.add-on-month {
+  color: #4a4a4a;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.add-on-item a {
+  color: #00a86b;
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.add-ons-bg {
+  background-color: #fafafa;
+}
+
+.box {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin: 0 auto 50px auto;
+  align-items: center;
+  font-size: 1rem;
+  background: #eef7fc;
+  text-align: center;
+}
+
+.box h1 {
+  color: #4a4a4a;
+  font-weight: 500;
+}
+
+.box a {
+  background: #00a86b;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.your {
+  color: #00a86b;
+  font-weight: 500;
+}
+
+.frequently-questions {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+.frequently-questions h1 {
+  color: #00a86b;
+  margin-bottom: 20px;
+  max-width: 960px;
+  margin: 0 auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frequently-questions-item {
+  background: #f7f9fc;
+  padding: 30px;
+}
+
+.frequently-questions-item li {
+  color: #4a4a4a;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.frequently-questions-item li::after {
+  content: "▼";
+  font-size: 12px;
+  color: #4a4a4a;
 }
