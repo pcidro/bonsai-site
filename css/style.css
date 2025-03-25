@@ -59,7 +59,7 @@ img {
 .menu-header li:nth-child(1)::after {
   content: "▼";
   font-size: 12px;
-  color: #4a4a4a;
+  color: #4c4d5f;
   margin-left: 5px;
 }
 
@@ -128,7 +128,7 @@ img {
 
 .plans h1 {
   max-width: 960px;
-  color: #4a4a4a;
+  color: #4c4d5f;
   font-size: 2rem;
   padding-bottom: 60px;
   text-align: center;
@@ -159,7 +159,7 @@ img {
 }
 
 .plan-item h2 {
-  color: #4a4a4a;
+  color: #4c4d5f;
   font-weight: 600;
   font-size: 1.3rem;
 }
@@ -172,7 +172,7 @@ img {
 
 .value-section sup {
   font-size: 2rem;
-  color: #4a4a4a;
+  color: #4c4d5f;
   margin-right: 5px;
   position: relative;
   top: -15px;
@@ -188,7 +188,7 @@ img {
 
 .big-number {
   font-size: 2.5rem;
-  color: #4a4a4a;
+  color: #4c4d5f;
   font-weight: bold;
   position: relative;
   top: -10px;
@@ -198,11 +198,11 @@ img {
   font-size: 1.5rem;
   display: inline-block;
   text-transform: uppercase;
-  color: #4a4a4a;
+  color: #4c4d5f;
 }
 
 .benefits {
-  color: #4a4a4a;
+  color: #4c4d5f;
   font-size: 12px;
 }
 
@@ -250,11 +250,11 @@ img {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 600;
-  color: #4a4a4a;
+  color: #4c4d5f;
 }
 
 .option {
-  color: #4a4a4a;
+  color: #4c4d5f;
   transition: color 0.3s;
 }
 
@@ -352,7 +352,7 @@ img {
 
 .add-ons h2 {
   max-width: 960px;
-  color: #4a4a4a;
+  color: #4c4d5f;
   font-size: 2rem;
   padding-bottom: 60px;
   text-align: center;
@@ -382,23 +382,23 @@ img {
 }
 
 .add-on-item h3 {
-  color: #4a4a4a;
+  color: #4c4d5f;
   font-size: 16px;
 }
 
 .add-on-item p {
-  color: #4a4a4a;
+  color: #4c4d5f;
   font-weight: 300;
   font-size: 14px;
 }
 
 .add-on-price {
   font-size: 2.5rem;
-  color: #4a4a4a;
+  color: #4c4d5f;
 }
 
 .add-on-month {
-  color: #4a4a4a;
+  color: #4c4d5f;
   font-weight: 300;
   font-size: 14px;
   text-transform: uppercase;
@@ -432,7 +432,7 @@ img {
 }
 
 .box h1 {
-  color: #4a4a4a;
+  color: #4c4d5f;
   font-weight: 500;
 }
 
@@ -475,17 +475,111 @@ img {
 }
 
 .frequently-questions-item li {
-  color: #4a4a4a;
+  color: #4c4d5f;
   font-weight: bold;
-  margin-bottom: 15px;
-  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative; /* Para que o ::after seja posicionado corretamente */
+  padding-right: 20px; /* Para dar espaço para a seta */
 }
 
 .frequently-questions-item li::after {
-  content: "▼";
-  font-size: 12px;
-  color: #4a4a4a;
+  content: "";
+  background: url("/img/down-arrow-svgrepo-com.svg");
+  background-size: contain;
+  display: block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+}
+
+footer {
+  max-width: 960px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  padding: 60px;
+}
+
+footer a {
+  color: #696969;
+  font-size: 13px;
+}
+
+footer h3 {
+  font-size: 16px;
+  color: #4c4d5f;
+  text-transform: uppercase;
+}
+
+footer h4 {
+  font-size: 14px;
+  color: #4c4d5f;
+  text-transform: uppercase;
+}
+
+footer li {
+  margin-bottom: 8px;
+}
+
+.products-list li {
+  max-width: 200px;
+}
+
+.pricing-list {
+  margin-top: 35px;
+}
+
+.pricing-list a {
+  display: flex;
+  align-items: center;
+}
+
+.pricing-list a:nth-child(1) {
+  color: #00a86b;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.resourcers-list-2 li:nth-child(1),
+.bonsai-list-2 li:nth-child(1) {
+  margin-top: 30px;
+}
+
+.bonsai-list-2 li:nth-child(3) {
+  margin-top: 20px;
+}
+.templates-list li {
+  display: flex;
+  align-items: center;
+}
+
+.templates-list li:nth-child(-n + 7)::after {
+  content: "";
+  background: url("/img/down-arrow-svgrepo-com.svg");
+  background-size: contain;
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
+}
+
+.bonsai-list-2 li {
+  display: flex;
+  align-items: center;
+}
+
+.bonsai-list-2 li:last-child:after {
+  content: "";
+  background: url("/img/down-arrow-svgrepo-com.svg");
+  background-size: contain;
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
 }
